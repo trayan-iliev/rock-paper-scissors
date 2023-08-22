@@ -56,9 +56,9 @@ function revealResult (playerChoice, computerChoice, doYouWin) {
     let resultText = document.createTextNode (`Opponent:`);
     let resultImage = document.createElement('img');
     let resultResult = document.createTextNode(doYouWin);
-    if (computerChoice == 'rock') {resultImage.src = 'img/paper-bw.png'}
-    else if (computerChoice == 'paper') {resultImage.src = 'img/paper-bw.png'}
-    else if (computerChoice == 'scissors') {resultImage.src = 'img/paper-bw.png'}
+    if (computerChoice == 'rock') {resultImage.src = 'img/rock-color.png'}
+    else if (computerChoice == 'paper') {resultImage.src = 'img/paper-color.png'}
+    else if (computerChoice == 'scissors') {resultImage.src = 'img/scissors-color.png'}
 
     // Append content
     textEle.appendChild(resultText);
