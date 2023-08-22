@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <link rel="stylesheet" href="src/style.css">
-    <script src="src/rps.js"></script>
+    <script src="src/rps.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
-<body>
+<body onload="document.body.style.opacity='1'">
     <header>
         <div class="header-left"><img src="img/trn-logo-white.png" alt="trn Design logo"></div>
         <div class="header-right">
@@ -26,8 +26,20 @@
             <img src="img/paper-color.png" class="game-choice-color-image" alt="Paper"></div></a>
         <a href="#" onclick="playRpsRound(2)"><div class="game-choice container-scissors"><img src="img/scissors-bw.png" class="game-choice-bw-image" alt="Scissors">
             <img src="img/scissors-color.png" class="game-choice-color-image" alt="Scissors"></div></a>
+    </div>
+
+    <div id="results">
+        <div id="results-text"></div>
+        <div id="results-image"></div>
+        <div id="results-result"></div>
+
 
     </div>
+
+
+    <footer>
+        Copyright &#169; Trayan Iliev
+    </footer>
 
 </body>
 </html>
