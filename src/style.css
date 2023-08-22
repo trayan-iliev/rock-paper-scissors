@@ -1,5 +1,6 @@
 html * {
     color: #EEEEEE;
+    background-color: #393E46;
     font-size: 14px;
     line-height: 1.4;
     font-family: 'Open Sans', sans-serif;
@@ -36,27 +37,14 @@ header a:hover {
     text-underline-offset: 2px;
 }
 
-.game-header {
-    display: flex;
-    justify-content: center; 
-    background-color: #393E46;
-    align-items: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    z-index: 1;
-}
 
-.game-header p {
-    font-size: 36px;
-}
 
 .game {
     position: relative;
     display: flex;
     justify-content: center; 
-    background-color: #393E46;
     align-items: center;
-    padding-bottom: 100px;
+    padding: 100px 0;
     z-index: 1;
 }
 
