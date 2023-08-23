@@ -1,3 +1,6 @@
+let playerWins = 0;
+let computerWins = 0;
+
 function playRpsRound (playerSelection) {
     let playerChoice = '';
     let computerChoice = '';
@@ -13,10 +16,8 @@ function playRpsRound (playerSelection) {
     else if (computerSelection == 1) { computerChoice = 'paper'}
     else if (computerSelection == 2) { computerChoice = 'scissors'};
 
-    //Check if it's a win
-
+    // Check if it's a win
     let doYouWin = '';
-
     if (computerChoice == playerChoice) {doYouWin = "It's a draw!"} else {
         if (playerChoice == 'rock' & computerChoice == 'paper') { doYouWin = "You lose!"}
         else if (playerChoice == 'rock' & computerChoice == 'scissors') { doYouWin = "You win!"}
@@ -26,6 +27,12 @@ function playRpsRound (playerSelection) {
         else if (playerChoice == 'scissors' & computerChoice == 'paper') { doYouWin = "You win!"}
     }
    
+    // Update score
+    if (doYouWin == "You win!") {playerWins++}
+    else if (doYouWin == "You lose!") {computerWins++};
+    document.getElementById("score").innerHTML = `${playerWins} : ${computerWins}`
+
+
     revealResult (playerChoice, computerChoice, doYouWin)
     // alert (`You selected ${playerChoice}, RPS Bot selected ${computerChoice}. \n${doYouWin}!`);
 }
