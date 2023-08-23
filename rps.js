@@ -92,8 +92,11 @@ function playAgain() {
 
     // Clear containers from previous messages
     resultEle.classList.add('fade-out');
+    resultEle.classList.remove('fade-in');
     imageEle.classList.add('fade-out');
+    imageEle.classList.remove('fade-in');
     playagainEle.classList.add('fade-out');
+    playagainEle.classList.remove('fade-in');
 
     setTimeout(() => {
     while (resultEle.firstChild) {

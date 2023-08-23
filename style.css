@@ -151,6 +151,14 @@ footer {
     z-index: 2;
     }
 
+footer a {
+    background-color: #151a22;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
 
 .fade-in {
     opacity: 1 !important;
