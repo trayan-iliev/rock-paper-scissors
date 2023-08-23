@@ -14,29 +14,38 @@
 <body onload="document.body.style.opacity='1'">
     <header>
         <div class="header-left"><img src="img/trn-logo-white.png" alt="trn Design logo"></div>
-        <div class="header-right">
-            <a href="/">Rock Paper Scissors</a>
-        </div>
+        <div class="header-right">Rock Paper Scissors</div>
     </header>
 
 
     <div class="game">
-        <a href="#" onclick="playRpsRound(0)"><div class="game-choice container-rock"><img src="img/rock-bw.png" class="game-choice-bw-image" alt="Rock">
-            <img src="img/rock-color.png" class="game-choice-color-image" alt="Rock"></div></a>
-        <a href="#" onclick="playRpsRound(1)"><div class="game-choice container-paper"><img src="img/paper-bw.png" class="game-choice-bw-image" alt="Paper">
-            <img src="img/paper-color.png" class="game-choice-color-image" alt="Paper"></div></a>
-        <a href="#" onclick="playRpsRound(2)"><div class="game-choice container-scissors"><img src="img/scissors-bw.png" class="game-choice-bw-image" alt="Scissors">
-            <img src="img/scissors-color.png" class="game-choice-color-image" alt="Scissors"></div></a>
+        <a href="#" id="rock-link" onclick="playRpsRound(0)">
+            <div class="game-choice container-rock">
+                <img src="img/rock-bw.png" id="rock-image" class="game-choice-bw-image" alt="Rock">
+                <img src="img/rock-color.png" id="rock-image-hover" class="game-choice-color-image" alt="Rock">
+            </div>
+        </a>
+        <a href="#" id="paper-link" onclick="playRpsRound(1)">
+            <div class="game-choice container-paper">
+                <img src="img/paper-bw.png" id="paper-image" class="game-choice-bw-image" alt="Paper">
+                <img src="img/paper-color.png" id="paper-image-hover" class="game-choice-color-image" alt="Paper">
+            </div>
+        </a>
+        <a href="#" id="scissors-link" onclick="playRpsRound(2)">
+            <div class="game-choice container-scissors">
+                <img src="img/scissors-bw.png" id="scissors-image" class="game-choice-bw-image" alt="Scissors">
+                <img src="img/scissors-color.png" id="scissors-image-hover" class="game-choice-color-image" alt="Scissors">
+            </div>
+        </a>
     </div>
 
     <div id="results">
         <div id="results-text"></div>
         <div id="results-image"></div>
-        <div id="results-result"></div>
-
-
+        <a href="#" onclick="playAgain()"><div id="results-playagain"></div></a>
     </div>
 
+    <div id="score">0 : 0</div>
 
     <footer>
         Copyright &#169; Trayan Iliev
