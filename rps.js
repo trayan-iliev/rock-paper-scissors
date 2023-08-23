@@ -40,6 +40,7 @@ function revealResult (playerChoice, computerChoice, doYouWin) {
     // Clear containers from previous messages
     while (textEle.firstChild) {
         textEle.classList.remove('fade-in');
+        textEle.classList.add('fade-out');
         textEle.removeChild(textEle.firstChild);
     }
     while (imageEle.firstChild) {

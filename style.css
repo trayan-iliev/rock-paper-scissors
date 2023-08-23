@@ -83,7 +83,6 @@ header a:hover {
 .game-choice-color-image {
     position: relative;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
 }
 
 .game-choice-bw-image {
@@ -101,9 +100,8 @@ header a:hover {
     flex-direction: column;
 }
 
-#results-img {
+#results-image {
     opacity: 0; 
-    /* transition: opacity 0.5s ease-in-out; */
 
 }
 
@@ -114,7 +112,6 @@ header a:hover {
 #results-text {
     font-size: 22px;
     opacity: 0; 
-    transition: opacity 0.5s ease-in-out;
 }
 
 
@@ -124,7 +121,6 @@ header a:hover {
     font-weight: 700;
     font-style: italic;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
 
 }
 
@@ -149,3 +145,7 @@ footer {
     transition: opacity 0.5s ease-in-out;
 }
 
+.fade-out {
+    opacity: 1 !important;
+    transition: opacity 0.5s ease-in-out;
+}
