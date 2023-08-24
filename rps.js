@@ -110,8 +110,7 @@ function playAgain() {
     while (playagainEle.firstChild) {
         playagainEle.removeChild(playagainEle.firstChild);
         playagainEle.classList.remove('fade-out');
-    } }, 400);
-
+    
     // Reactivate hyperlink & onClick function call
     document.getElementById('rock-link').setAttribute('href', '#');
     document.getElementById('rock-link').setAttribute('onclick', 'playRpsRound(0)');
@@ -122,5 +121,5 @@ function playAgain() {
     document.getElementById('rock-image-hover').classList.add('game-choice-color-image');
     document.getElementById('paper-image-hover').classList.add('game-choice-color-image');
     document.getElementById('scissors-image-hover').classList.add('game-choice-color-image');
-
+    } }, 400); 
 }
